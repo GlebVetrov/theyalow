@@ -397,7 +397,6 @@ main .yellow-block .section .scroll {
   align-items: center;
 }
 .section--grey .copyright .footer-logo {
-  width: 170px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
