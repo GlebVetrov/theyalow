@@ -1,0 +1,16 @@
+// Fonts here
+@font-face {
+  font-family: 'Lucida Sans';
+  src: url('../../fonts/LucidaSans-Italic.woff2') format('woff2'),
+  url('../../fonts/LucidaSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../../fonts/SegoeUI.woff2') format('woff2'),
+  url('../../fonts/SegoeUI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

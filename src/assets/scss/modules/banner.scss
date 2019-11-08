@@ -1,0 +1,49 @@
+.main-banner {
+  position: relative;
+
+  .arrow {
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      filter: opacity(.9);
+    }
+  }
+  .arrow-prev {
+    position: absolute;
+    top: calc((300px) / 2);
+    left: 0;
+    padding: 18px 9.5px;
+    background: $primary-color;
+
+  }
+  .arrow-next {
+    position: absolute;
+    top: calc((300px) / 2);
+    right: 0;
+    padding: 18px 9.5px;
+    background: $primary-color;
+
+  }
+
+  &__content {
+    display: flex;
+    padding: 56px 0 71px;
+  }
+
+  &__description {
+    padding: 90px 0 0 51px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 63px;
+    font-family: "Asap", serif;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  .yellow {
+    color: rgb(245, 197, 6);
+  }
+}
