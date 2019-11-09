@@ -11,4 +11,20 @@
     text-transform: uppercase;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
   }
+
+  @media screen and (max-width: $desktopWidth) {
+    background-color: transparent;
+    box-shadow: none;
+
+    &__content {
+      box-shadow: 0 -5px 5px -2px #000;
+      background-color: #4c4c4c;
+      font-size: 17px;
+    }
+
+    &__logo {
+      @include size(30px);
+      margin-left: 65px;
+    }
+  }
 }

@@ -28,4 +28,20 @@
     font-family: "Segoe UI", serif;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: $desktopWidth) {
+    background: transparent;
+
+    &__items {
+      @include backgroundImg("/assets/img/advateges.png");
+    }
+
+    .container &__item {
+      border: 0;
+    }
+
+    &__text {
+      font-size: 23px;
+    }
+  }
 }

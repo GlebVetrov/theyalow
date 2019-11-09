@@ -76,6 +76,23 @@
       background-color: #f5c506;
       border-radius: 50%;
     }
+  }
 
+  @media screen and (max-width: $desktopWidth) {
+    background: transparent;
+    padding: 0;
+
+    &__content-title {
+      font-size: 30px;
+    }
+
+    &__info-items {
+      display: none;
+    }
+
+    &__content {
+      padding: 43px 29px 55px 21px;
+      background-color: #474747;
+    }
   }
 }

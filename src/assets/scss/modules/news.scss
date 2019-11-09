@@ -41,6 +41,10 @@
     margin-left: 34px;
     background-color: $default-color;
 
+    &-chat {
+      display: none;
+    }
+
     &-num {
       position: absolute;
       top: 20px;
@@ -99,6 +103,98 @@
       border-radius: 12px;
       height: 15px;
       width: 20%;
+    }
+  }
+
+  @media screen and (max-width: $desktopWidth) {
+    background: transparent;
+    box-shadow: none;
+
+    &__title,
+    &__calendar,
+    &__range,
+    .img-plus,
+    &__twitter-num {
+      display: none;
+    }
+
+    &__content {
+      padding: 0;
+    }
+
+    &__info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__desc-and-video {
+      padding: 9px;
+    }
+
+    &__desc {
+      margin-right: 9px;
+    }
+
+    &__video video {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__twitter {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 24px 32px 12px 85px;
+      margin: 0;
+      background-color: #f5c507;
+
+      &-img-twitter{
+        margin-right: 38px;
+      }
+
+      &-massage {
+        background-color: #fceeb5;
+        padding: 9px 0 5px 19px;
+        margin-bottom: 14px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-family: "Arial", sans-serif;
+        color: rgb(143, 142, 142);
+      }
+
+      &-massage:before {
+        content: '';
+        width: 9px;
+        height: 12px;
+        position: absolute;
+        left: -9px;
+        bottom: 16px;
+      }
+
+      .selected {
+        background-color: #fff;
+      }
+
+      &-chat {
+        display: block;
+      }
+
+      &-twit__btn {
+        color: $mainFontColor;
+        background: linear-gradient(#e9a826, #d1900d);
+        border-radius: 0 15px 15px 0;
+      }
+
+      &-twit__input {
+        border-radius: 15px 0 0 15px;
+      }
+
+      &-twit__btn,
+      &-twit__input {
+        float: left;
+        padding: 10px 20px;
+        border: 1px solid #d0a806
+      }
     }
   }
 }

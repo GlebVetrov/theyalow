@@ -42,4 +42,24 @@
   .yellow {
     color: rgb(245, 197, 6);
   }
+
+  @media screen and (max-width: $desktopWidth) {
+    box-shadow: none;
+
+    .arrow {
+      display: none;
+    }
+
+    &__content {
+      padding: 0;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__video {
+      width: 640px;
+    }
+  }
 }

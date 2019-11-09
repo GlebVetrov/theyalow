@@ -21,15 +21,15 @@
                     <nav class="header-navigation">
                         <ul class="header-navigation__items">
                             <li class="header-navigation__item">
-                                <img src="assets/img/about.svg" alt="img">
+                                <img class="header-navigation__img" src="assets/img/about.svg" alt="img">
                                 <a class="header-navigation__link" href="#">about us</a>
                             </li>
                             <li class="header-navigation__item">
-                                <img src="assets/img/services.svg" alt="img">
+                                <img class="header-navigation__img" src="assets/img/services.svg" alt="img">
                                 <a class="header-navigation__link" href="#">services</a>
                             </li>
                             <li class="header-navigation__item">
-                                <img src="assets/img/contact.svg" alt="img">
+                                <img class="header-navigation__img" src="assets/img/contact.svg" alt="img">
                                 <a class="header-navigation__link" href="#">contact</a>
                             </li>
                         </ul>
@@ -45,7 +45,8 @@
             <div class="container">
                 <section class="main-banner__content">
                     <div class="main-banner__player">
-                        <video src="#" width="550" height="330" poster="assets/img/player.png"></video>
+                        <video class="main-banner__video" src="#" width="550" height="330"
+                               poster="assets/img/player.png"></video>
                     </div>
                     <div class="main-banner__description">
                         <p class="main-banner__text yellow">The cool</p>
@@ -95,6 +96,15 @@
                                  alt="plus" width="11" height="11">
                             <img class="news__twitter-img-twitter" src="assets/img/twitter.svg"
                                  alt="twitter" width="163" height="133">
+                            <div class="news__twitter-chat">
+                                <div class="news__twitter-massage selected">Daily Mobile UI Design Inspiration #1  via @cssauthor</div>
+                                <div class="news__twitter-massage">Daily Mobile UI Design Inspiration #1  via @cssauthor</div>
+                                <div class="news__twitter-massage">Daily Mobile UI Design Inspiration #1  via @cssauthor</div>
+                                <div class="news__twitter-twit">
+                                    <input class="news__twitter-twit__input" type="text">
+                                    <button class="news__twitter-twit__btn">Tweet</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="news__calendar">
@@ -149,7 +159,8 @@
 
     <footer class="footer">
         <div class="footer__content container">
-            <img src="assets/img/footer-logo.png" alt="logo" class="footer__logo" width="54" height="54">
+            <img src="assets/img/footer-logo.png" alt="logo"
+                    class="footer__logo" width="54" height="54">
             TheYalow
         </div>
     </footer>
