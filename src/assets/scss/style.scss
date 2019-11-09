@@ -5,6 +5,8 @@
 @import "modules/banner";
 @import "modules/advantages";
 @import "modules/news";
+@import "modules/description";
+@import "modules/footer";
 
 html {
   line-height: $mainLineHeight;
@@ -25,6 +27,5 @@ html {
 }
 
 .bg-top {
-  background: url("/assets/img/bg-header.png") 100% 100% no-repeat;
-  background-size: cover;
+  @include backgroundImg("/assets/img/bg-header.png");
 }

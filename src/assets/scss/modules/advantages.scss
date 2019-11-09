@@ -1,5 +1,5 @@
 .advantages {
-  box-shadow: 0 0 10px black;
+  @include backgroundImg("/assets/img/advateges.png");
 
   &__items {
     display: flex;
@@ -21,11 +21,11 @@
 
   &__text {
     margin-top: 20px;
+    color: black;
     text-align: center;
     font-weight: 300;
     font-size: 27px;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI", serif;
     text-transform: uppercase;
-    line-height: 1.2;
   }
 }
